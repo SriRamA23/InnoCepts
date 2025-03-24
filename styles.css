@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+    background: url('./image/Girl-Education.jpg') no-repeat center center/cover;
+    background-size: cover;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0,0.3);
+}
+
+.logo {
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('image.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Create space between text and button */
+    gap: 20px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #B3B0E9ff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center; /* Remove right alignment */
+    cursor: pointer;
+    width:300px;
+    border:none;
+    outline:none;
+}
+
+
+.btn:hover {
+    background: #B3B0E9;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack text and button vertically */
+        align-items: center; /* Center align both */
+        text-align: center;
+    }
+
+    .btn {
+        align-self: center; /* Ensure button moves below */
+        margin-top: 20px; /* Add spacing below text */
+    }
+}
+
+
+/* Animation for text */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to content */
+.content {
+    animation: slideIn 1s ease-out;
+}
+.chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.chatbot-btn:hover {
+    background: #006fd6;
+}
