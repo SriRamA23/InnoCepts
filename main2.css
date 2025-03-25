@@ -1,18 +1,42 @@
 /* From Uiverse.io by gharsh11032000 */
-body{
-    margin: 20px;
-} 
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh;
+  background-image: url('https://www.hopkinsmedicine.org/-/media/images/health/3_-wellness/kids-and-teens-health/growing-child-adolescent-teaser.jpg'); /* Replace with actual image URL */
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  z-index: 1000; /* Ensures header stays above other content */
+}
 .card {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     padding: 36px;
     border-radius: 24px;
     overflow: hidden;
     line-height: 1.6;
-    border: 1px solid #999999;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
     margin-bottom: 20px;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -22,7 +46,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    color: #000000;
+    color: #ffffff;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
@@ -38,6 +62,7 @@ body{
     z-index: 1;
     opacity: 0.8;
     font-size: 18px;
+    color: white;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
@@ -48,7 +73,7 @@ body{
     top: -5.2rem;
     width: 10.4rem;
     height: 10.4rem;
-    background: #bf79db;
+    background:teal;
     z-index: 0;
     opacity: 0;
     border-radius: 50%;
@@ -62,7 +87,7 @@ body{
     bottom: -5.2rem;
     width: 10.4rem;
     height: 10.4rem;
-    background: #bf79db;
+    background: teal;
     z-index: 0;
     opacity: 0;
     border-radius: 50%;

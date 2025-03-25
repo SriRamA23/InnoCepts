@@ -15,11 +15,14 @@ body {
 
 /* Header */
 header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  z-index: 1000; /* Ensures header stays above other content */
 }
-
 .button-container {
     display: flex;
     gap: 10px;
