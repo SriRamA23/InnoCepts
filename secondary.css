@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 body {
@@ -11,10 +11,35 @@ body {
   align-items: center; */
   flex-direction: column; /* Stack elements vertically */
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-image: url('https://media.istockphoto.com/id/1282344502/photo/pinky-swear-ill-always-be-there.jpg?s=612x612&w=0&k=20&c=IBBsDKoOQDkOIwF7aItIzuAvJZGeVRigtcMUGo3v8Xs='); /* Replace with actual image URL */
   padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+
 }
-/* From Uiverse.io by Prince4fff */ 
+.card-container {
+  margin-top: 60px; /* Adds space between the header and the cards */
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  z-index: 1000; /* Ensures header stays above other content */
+}
+.back-button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .card p {
   font-size: 17px;
   font-weight: 400;
@@ -36,7 +61,7 @@ body {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #b3b0e9;
+  background-color: rgb(21, 157, 157);
   border-radius: 0 4px 0 32px;
 }
 
@@ -67,7 +92,7 @@ body {
   z-index: -1;
   top: -16px;
   right: -16px;
-  background: #d4d1ff;
+  background: teal;
   height: 32px;
   width: 32px;
   border-radius: 32px;
@@ -87,7 +112,7 @@ body {
 
 .card1:hover h3 {
   transition: all 0.3s ease-out;
-  color: #fff;
+  color: #ffffff;
 }
 
 .card2 {
@@ -119,7 +144,7 @@ body {
   z-index: -1;
   top: -16px;
   right: -16px;
-  background: #00838d;
+  background: #00676f;
   height: 32px;
   width: 32px;
   border-radius: 32px;
